@@ -1,3 +1,5 @@
+name: Meu Primeiro Workflow # Nome do workflow
+
 on: push # Disparar o workflow em cada push
 
 jobs: # Definir os trabalhos do workflowhi
