@@ -2,19 +2,18 @@ name: Meu Primeiro Workflow # Nome do workflow
 
 on: push # Disparar o workflow em cada push
 
-jobs: # Definir os trabalhos do workflowhi
+jobs: # Definir os trabalhos do workflow
   job1-hello:
     runs-on: ubuntu-latest
     steps:
       - name: Imprimir mensagem
         run: echo "Olá, Mundo!"
-
-job2-goodbye:
+  job2-goodbye:
     runs-on: ubuntu-latest
     steps:
       - name: step1 - sequência de instruções
         run: |
-             echo "uma nova instrução"
-            ls
+          echo "uma nova instrução"
+          ls
       - name: step2 - Imprimir mensagem
         run: echo "Até logo!"
