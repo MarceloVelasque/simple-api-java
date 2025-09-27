@@ -1,0 +1,13 @@
+name: 02 workflow filtro
+
+on: # a ação será com push
+  push:
+    branches: "feature/**" #somente branches que comecem com feature/
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exibir o evento
+        run: echo "workflow disparado por ${{ github.event_name }}"
+#teste
